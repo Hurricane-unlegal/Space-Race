@@ -15900,9 +15900,9 @@ MonoBehaviour:
   textTimer: {fileID: 513504867}
   mainMenu: {fileID: 883136224}
   textH: {fileID: 0}
-  Henneks: {fileID: 2070836428}
-  Eagle: {fileID: 1742162932}
-  Assaulter: {fileID: 1744981142}
+  HenneksP: {fileID: 0}
+  EagleP: {fileID: 0}
+  AssaulterP: {fileID: 0}
   CamH: {fileID: 282840810}
 --- !u!4 &883136223
 Transform:
@@ -16030,9 +16030,9 @@ MonoBehaviour:
   textTimer: {fileID: 513504867}
   mainMenu: {fileID: 883136224}
   textH: {fileID: 0}
-  Henneks: {fileID: 2070836428}
-  Eagle: {fileID: 1485347034}
-  Assaulter: {fileID: 585681954}
+  HenneksP: {fileID: 2070836428}
+  EagleP: {fileID: 585681954}
+  AssaulterP: {fileID: 1485347034}
   CamH: {fileID: 282840810}
 --- !u!114 &892777903
 MonoBehaviour:

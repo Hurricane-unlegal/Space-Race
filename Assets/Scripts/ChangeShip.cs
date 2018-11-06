@@ -11,16 +11,16 @@ public class ChangeShip : MonoBehaviour
     public Text textTimer;
     public MainMenu mainMenu;
     public Text textH;
-    public GameObject Henneks;
-    public GameObject Eagle;
-    public GameObject Assaulter;
+    public GameObject HenneksP;
+    public GameObject EagleP;
+    public GameObject AssaulterP;
     public GameObject CamH;
     int ship = 2;
     float pause = -3f;
 
     void Start()
     {
-        ship = MainMenu.ship;
+        //ship = MainMenu.ship;
     }
 
    /*void Timer()
@@ -35,7 +35,26 @@ public class ChangeShip : MonoBehaviour
     void Update()
     {
         //Timer();
-        if (ship == 1)
+        ship = MainMenu.ship;
+        switch (ship)
+        {
+            case 1:
+                HenneksP.SetActive(false);
+                EagleP.SetActive(true);
+                AssaulterP.SetActive(false);
+                break;
+            case 2:
+                HenneksP.SetActive(true);
+                EagleP.SetActive(false);
+                AssaulterP.SetActive(false);
+                break;
+            case 3:
+                HenneksP.SetActive(false);
+                EagleP.SetActive(false);
+                AssaulterP.SetActive(true);
+                break;
+        }
+        /*if (ship == 1)
         {
             Henneks.GetComponent<ShipControll>().enabled = false;
             Henneks.GetComponent<WayPMove>().enabled = true;
@@ -61,7 +80,7 @@ public class ChangeShip : MonoBehaviour
             Eagle.GetComponent<WayPMove>().enabled = true;
             Assaulter.GetComponent<ShipControll>().enabled = true;
             Assaulter.GetComponent<WayPMove>().enabled = false;
-        }
+        }*/
         
     }
 }
